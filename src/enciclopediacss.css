@@ -1,0 +1,161 @@
+:root {
+	--chiaro: hsl(229, 100%, 88%);
+	--scuro: hsl(229, 55%, 42%);
+	--scuro-trasp: hsla(229, 55%, 42%, 0.1);
+	--chiaro-trasp: hsla(229, 100%, 88%, 0.1);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    font-family: "Verdana Pro Light",serif;
+    background-color: hsl(170, 50%, 95%);
+}
+header{
+	position: fixed;
+	padding: 10px;
+	width:100%;
+	top: 0;
+	background-color: var(--chiaro-trasp);
+	align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* logo e titolo */
+.logo-div-header {
+	display: flex;
+	align-items: center;
+}
+
+
+.logo-img-header {
+	display: inline-block;
+	opacity: 0.5;
+	width: 4em;
+}
+
+
+.titolo-div-header {
+	display: inline-block;
+	margin-left: 10px;
+}
+.titolo-h1-header, .sottotitolo-p-header {
+	margin: 0;
+	opacity: 0.5;
+	color: var(--scuro);
+}
+.titolo-h1-header {
+	font-family: "Verdana Pro", serif;
+}
+
+/* navigation */
+.navigation-div-header {
+	align-items: center;
+	display: flex;
+}
+
+
+.nav-comp {
+	display: inline-block;
+	align-items: center;
+}
+.buttons-div-nav-comp {
+	align-items: center;
+}
+.button-nav-comp {
+	text-decoration: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right:10px;
+	background-color: var(--scuro-trasp);
+	border: 1px solid var(--scuro-trasp);
+	margin-right: 5px;
+	align-items: center;
+}
+
+/* immagine di copertina */
+.img-generale {
+	width: 100%;
+}
+
+
+/* ELEMENTI CELLULARE - 0 */
+.nav-cell {
+	display: none;
+}
+
+.pagination-div-nav-cell {
+	display: none;
+}
+.dropdown-div-nav-cell{
+	display: none;
+}
+.button-drop-cell {
+	display: none;
+}
+
+
+
+/* cellulare */
+@media (max-width: 750px) {
+	
+	header {
+		position: relative;
+		padding: 10px;
+		width:100%;
+		top: 0;
+		background-color: var(--chiaro-trasp);
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	
+	/* logo e titolo */
+	.logo-img-header {
+		display: inline-block;
+		opacity: 0.5;
+		width: 8.5vw;
+	}
+	
+	
+	.sottotitolo-p-header {
+		font-size: 2vw;
+	}
+	.titolo-h1-header {
+		font-family: "Verdana Pro", serif;
+		font-size: 4vw;
+	}
+	
+	
+	/* navigation */
+	.nav-cell {
+		display: inline-block;
+		align-items: center;
+	}
+	.button-nav-cell {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right:10px;
+		background-color: var(--scuro-trasp);
+		border: 1px solid var(--scuro-trasp);
+		margin-right: 5px;
+		float: right;
+	}
+
+
+	/* ELEMENTI COMPUTER - 0 */
+	.buttons-div-nav-comp {
+		display: none;
+	}
+	.button-nav-comp {
+		display: none;
+	}
+}
